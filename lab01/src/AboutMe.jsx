@@ -1,5 +1,3 @@
-
-
 function AboutMe({name, age, favorite_food}){
     return(
         <div>

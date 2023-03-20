@@ -9,6 +9,7 @@ function ToDos ({todos, changeIsComplete, onTodoStatusChanged}){
                         <input type = "checkbox"  defaultChecked = {todo.isComplete} onChange = {(e) => {changeIsComplete(todo, e.target.checked), onTodoStatusChanged(index, e.target.checked)}}/>
                             {todo.description}
                             {todo.isComplete ? <span>(Done!)</span> : <span></span>}
+                            {/* <button onClick = {()=> }>Remove</button> 删除 */}
                     </li>))
                 }
             </ul>
