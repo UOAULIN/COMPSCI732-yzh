@@ -1,3 +1,4 @@
+# COMPSCI732-lab
 # COMPSCI 732 / SOFTENG 750 Lab 01
 
 ## Exercise One - Development environment setup & Vite
