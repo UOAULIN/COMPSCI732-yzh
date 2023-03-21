@@ -36,6 +36,13 @@ function App() {
     setTodos([...todos, newTodo]);
   }
 
+  //exercise 10
+  function HandleRemove (index){
+    const newItems = [...todos];
+    newItems.splice(index, 1)
+    setTodos(newItems)
+  }
+
   return (
     <div>
 
@@ -55,7 +62,7 @@ function App() {
 
       <h1>My todos</h1>
       {/* TODO: Add your todo list here */}
-      {<ToDos todos = {todos} changeIsComplete = {ChangeIsComplete} onTodoStatusChanged={(index, status) => console.log(index, status)}/>}
+      {<ToDos todos = {todos} changeIsComplete = {ChangeIsComplete} onTodoStatusChanged={(index, status) => console.log(index, status)} HandleRemove={HandleRemove}/>}
 
       <h1>Add Item</h1>
       {<NewTodoItem handleAddTodo = {HandleAddTodo}/>}
